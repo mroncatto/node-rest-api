@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API REST</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .form-inline p {
+            font-size: 1.5em;
+            line-height: 30px;
+            height: 30px;
+            margin: 0;
+        }
+
+        .form-inline p span {
+            color: red;
+        }
+
+        .form-inline button {
+            height: 30px;
+            margin: 0;
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">API REST</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container-fluid m-0 p-0">
+        <div class="accordion" id="accordionApi">
+            <div class="card">
+
+                <!-- User -->
+                <div class="card-header" id="heading1">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            User
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionApi">
+                    <div class="card-body p-2">
+                        <div class="alert alert-primary m-1 p-2" role="alert">
+                            <div class="form-inline">
+                                <button class="btn btn-sm btn-success">GET</button>
+                                <p class="mx-5"><strong>/v1/user </strong> <small><small>Obtiene el listado de
+                                            usuarios</small></small></p>
+                            </div>
+                        </div>
+                        <div class="alert alert-primary m-1 p-2" role="alert">
+                            <div class="form-inline">
+                                <button class="btn btn-sm btn-success">GET</button>
+                                <p class="mx-5"><strong>/v1/user/{<span>id</span>} </strong> <small><small>Obtiene un
+                                            usuario específico por su ID</small></small></p>
+                            </div>
+                        </div>
+                        <div class="alert alert-primary m-1 p-2" role="alert">
+                            <div class="form-inline">
+                                <button class="btn btn-sm btn-warning">POST</button>
+                                <p class="mx-5"><strong>/v1/user </strong> <small><small>Registra un
+                                            usuario</small></small></p>
+                            </div>
+                        </div>
+                        <div class="alert alert-primary m-1 p-2" role="alert">
+                            <div class="form-inline">
+                                <button class="btn btn-sm btn-warning">PUT</button>
+                                <p class="mx-5"><strong>/v1/user/{<span>id</span>}</strong> <small><small>Altera un
+                                            usuario especifico mediante su ID</small></small></p>
+                            </div>
+                        </div>
+                        <div class="alert alert-primary m-1 p-2" role="alert">
+                            <div class="form-inline">
+                                <button class="btn btn-sm btn-warning">PUT</button>
+                                <p class="mx-5"><strong>/v1/user/{<span>id</span>}/role</strong> <small><small>Altera
+                                            los roles de un
+                                            usuario especifico mediante su ID</small></small></p>
+                            </div>
+                        </div>
+                        <div class="alert alert-primary m-1 p-2" role="alert">
+                            <div class="form-inline">
+                                <button class="btn btn-sm btn-danger">DELETE</button>
+                                <p class="mx-5"><strong>/v1/user/{<span>id</span>}</strong> <small><small>Inactiva un
+                                            usuario especifico mediante su ID</small></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
