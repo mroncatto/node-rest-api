@@ -3,7 +3,7 @@ Una API Rest simples con Node y MongoDB (Sin autenticación)
 
 ## Ejecutar en Docker
 - Renomear el archivo `.env.example` para `.env`
-- `docker-compose -f "docker-compose.yml"`
+- `docker-compose -f docker-compose.yml up -d --build`
 
 ## Ejecutar localmente
 - Renomear el archivo `.env.example` para `.env`
